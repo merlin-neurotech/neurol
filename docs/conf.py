@@ -38,12 +38,11 @@ extensions = ['sphinx.ext.autodoc', 'sphinx.ext.napoleon'
 # use same order as in source; don't sort alphabetically
 # also document __init__ methods (skipped by default)
 autodoc_default_options = {
-    'members': True,
     'member-order': 'bysource',
     'special-members': '__init__',
-    'undoc-members': True,
     'exclude-members': '__weakref__'
 }
+autodoc_member_order = 'bysource' # a fix for readthedocs.org
 napoleon_use_ivar = True
 
 # Add any paths that contain templates here, relative to this directory.
