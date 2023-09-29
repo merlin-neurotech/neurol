@@ -19,7 +19,7 @@ from .models.classification_tools import get_channels
 from .models.preprocessing import epoch, epoch_band_features
 
 # is this right? is it 220 Hz (see documentation)?
-DEVICE_SAMPLING_RATE = {'muse': 256, 'unicorn':250
+DEVICE_SAMPLING_RATE = {'muse': 256, 'unicorn':250,
                         }
 
 # FIXME: go through and fix
